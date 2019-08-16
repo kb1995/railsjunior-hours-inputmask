@@ -1,0 +1,7 @@
+<div data-controller="hour">
+  <input type="text" data-target="hour.input" data-action="keyup->hour#getTime" id="inputmaskInput">
+  
+  <%= simple_form_for @user, url: root_path do |f| %>
+    <%= f.input :date, label: "Simple form date", include_blank: true %>
+  <% end %>
+</div>
